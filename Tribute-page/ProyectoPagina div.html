@@ -16,7 +16,8 @@
 </head>
 <script>
    function myFunction() {
-        const navigationBar = document.getElementById("nav-bar");
+       console.log('entra')
+    const navigationBar = document.getElementById("nav-bar");
         if (navigationBar.className === "nav-bar") {
             navigationBar.className += " responsive";
         } else {
@@ -35,15 +36,15 @@
     
         <nav id="nav-bar" class="nav-bar" >
             <ul>
-                <li><a class="active" href="Pagina1.html">Inicio</a></li>
-                <li><a class="active" href="Pagina2.html">Pagina 2</a></li>
-                <li><a class="active" href="Pagina3.html">Pagina 3</a></li>
+                <li><a class="active" href="Pagina1.html">Menu</a></li>
+                <li><a class="active" href="Pagina2.html">Page 2</a></li>
+                <li><a class="active" href="Pagina3.html">Page 3</a></li>
+                
                 <li class="menu_hamburger-icon">
-                   <a>
+                    <a href="javascript:void(0);" onclick="myFunction()">
                     <i class="lni lni-menu"></i>
                 </a> 
                 </li>
-                
             </ul>
     </nav>
 
@@ -297,6 +298,11 @@
             </div>
             <div class="footer_otherpages footer_section">
               <h3>Other of my pages </h3>  
+              <ul>
+                <li><a href="Pagina2.html">Page 1</a></li>
+                <li><a href="Pagina3.html">Page 2</a></li>
+                <li><a href="listas.html">Page 3</a></li>
+              </ul>
             </div>
                 </footer>
     

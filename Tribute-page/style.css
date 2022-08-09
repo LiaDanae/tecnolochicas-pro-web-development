@@ -30,16 +30,16 @@ html, body{
     background-color: #eee4e9;
 }
 #nav-bar li a:hover :not(.active){
-    background-color: rgb(50, 133, 182);
+    background-color: rgb(231, 237, 253);
 }
-#nav-bar li a.active{
+#nav-bar li a.active {
     color: rgb(255, 255, 255);
     background-color: #9b5074;
-    
 }
 #nav-bar .menu_hamburger-icon{
     display: block;
     float: right;
+    padding-left: 30px ;
 }
 #nav-bar.responsive{
 position: relative;
@@ -52,29 +52,7 @@ position: relative;
 #nav-bar .menu_hamburger-icon a{
 color: #9b5074;
 }
-@media screen and (max-width: 600px) {
-    #nav-bar li:not(:first-child):not(.menu_hamburger-icon){
-        display: none;
-    }
-    #nav-bar .menu_hamburger-icon{
-        display: block;
-        float: right;
-    }
-}
-@media screen and (max-width: 600px) {
-   
-}
-    @media screen and (max-width: 600px) {
-    #relatedlinks{
-        display: none;
-    }
-}     
-@media screen and (max-width: 600px) {
-    #content{
-        padding-right: 10px;
-    }
-}
-     #relatedlinks{
+ #relatedlinks{
     border: 3px solid rgb(147, 111, 170); flex: 1; 
     padding: 10px 20px 10px 10px;
     background: #f3d9ea; 
@@ -172,4 +150,67 @@ a{
 a:hover{
 text-decoration: underline;
 text-underline-offset: 3px;
+}
+.footer_otherpages ul{
+    padding: 0 0 0 10px;
+}
+.footer_otherpages li{
+    list-style: none;
+}
+@media (max-width: 600px) {
+    #relatedlinks{
+        display: none;
+    }
+        #nav-bar.responsive {
+            position: relative;
+        }
+    
+        #nav-bar.responsive {
+            position: relative;
+            right: 0;
+            top: 0;
+        }
+    
+        #nav-bar.responsive .menu_hamburger-icon {
+            color: #fff;
+        }
+    
+        #nav-bar.responsive li {
+            float: none;
+            display: block !important;
+        }
+    
+        #nav-bar.responsive li a {
+            text-align: left;
+        }
+    
+        #nav-bar li:not(:first-child, :last-child) {
+            display: none;
+        }
+    
+        #content {
+            padding: 10px;
+        }
+    #footer{
+        flex-direction: column;
+    }
+    .footer_socialnetwork{
+        border: 2px solid #000000;
+    }
+    .footer_contact{
+    border: 2px solid #000000;
+    border-top: 0px;
+}
+    .footer_otherpages{
+        border: 2px solid #000000;
+        border-top: 0px;
+    }
+    i{
+        padding-right: 30px ;
+    }
+}
+@media (min-width: 600px) {
+    #nav-bar .menu_hamburger-icon{
+        display: none;
+    }
 }
